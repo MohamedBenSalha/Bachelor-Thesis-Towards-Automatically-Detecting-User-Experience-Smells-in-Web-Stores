@@ -1,5 +1,7 @@
 # Towards Automatically Detecting User Experience Smells in Web Stores
 
+[![DOI](https://zenodo.org/badge/534407620.svg)](https://zenodo.org/badge/latestdoi/534407620)
+
 > This repository contains all information related to a bachelor thesis done at the University of Stuttgart by Mohamed Ben Salha. The author can be reached at the email **st167263@stud.uni-stuttgart.de**
 
 The research objectives of this work are:
