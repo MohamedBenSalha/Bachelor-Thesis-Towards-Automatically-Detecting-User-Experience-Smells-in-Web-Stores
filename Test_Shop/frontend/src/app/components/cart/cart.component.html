@@ -1,0 +1,55 @@
+<section>
+  <ng-container *ngIf="products.length != 0">
+    <div class="card-table">
+      <div class="cart-product">
+        <table class="table table-responsive">
+          <thead>
+          <tr>
+            <th class="b-0">Name</th>
+            <th class="b-0">Price</th>
+            <!--<th class="b-0">Quantity</th>-->
+            <th></th>
+
+          </thead>
+          <tbody>
+          <tr *ngFor="let item of products">
+            <td>{{ item.title }}</td>
+            <td>{{ item.price }}</td>
+            <!--<td>{{ item.quantity }}</td>
+            <td>{{ item.total }}</td>-->
+            <td>
+              <button (click)=removeItem(item) class="btn btn-danger" matomoClickAction="Delete Item"
+                      matomoClickCategory="Delete" matomoClickName="Delete">Delete
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4"></td>
+            <!--<td><button class="btn btn-danger" id="=emptyButton" (click)=emptyCart()>Empty Cart</button></td>-->
+            <td>
+              <button class="btn btn-primary" id="=moreButton" routerLink="/products">Shop More</button>
+            </td>
+            <td>
+              <button (click)="startCheckout()" class="btn btn-success" id="=checkoutButton"
+                      matomoClickAction="Pay" matomoClickCategory="Payment" matomoClickName="Purchase">Checkout
+              </button>
+            </td>
+            <td><strong>Grand Total: {{ grandTotal }} €</strong></td>
+          </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="products.length ==0" style="align-items: center; justify-content: center;">
+    <div class="card">
+      <div class="container" style>
+        <img [src]="cartPicture" alt="" style="height: 350px; width: 350px; position: absolute; left: 0%;">
+        <h6 class="card-title" style="font-family: 'Oswald'; font-size: 2rem; position: absolute; top: 25%; left: 25%;">
+          Ihr Einkaufwagen ist momentan leider leer!</h6>
+        <button class="btn btn-background-circle" id="now" routerLink="/">Shop Now</button>
+      </div>
+    </div>
+  </ng-container>
+</section>

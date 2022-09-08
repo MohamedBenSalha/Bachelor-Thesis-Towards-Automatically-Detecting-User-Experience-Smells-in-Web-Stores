@@ -1,0 +1,151 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href='javascript:void(0);'
+       id="shopname"
+       style="font-size: 30px; font-family: 'Oswald' ;color: black; position: absolute; left: 0%;">Bachelorarbeit
+      Testshop</a>
+
+    <div>
+      <form [formGroup]="formGroup" style="position: absolute; left: 25%; margin-top: -25px;">
+        <input (keyup)="search()" [(ngModel)]="searchTerm" [matAutocomplete]="auto" formControlName="title"
+               matInput
+               style="background-color: white; color: black;  height: 50px; width: 450px;" type="text">
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let item of filteredOptions" [value]=item>
+            {{item}}
+          </mat-option>
+        </mat-autocomplete>
+      </form>
+    </div>
+    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+            data-target="#navbarNav" data-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" style="position: absolute; right: 0px;">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a *ngIf="!loggedIn()" class="nav-link" routerLink="/login"><strong>Login</strong></a>
+          <a *ngIf="loggedIn()" class="nav-link" routerLink="/account"><strong>Account</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/products"><strong>Produkte</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/cart"><strong>Cart</strong></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<nav class="grey lighten-3">
+  <div class="card-top container-fluid">
+    <div class="container d-flex" style="text-align: center;">
+      <div class="item">
+        <!--<button class="waves-effect waves-light btn cyan darken-2" style="color: black; border: 0; font-size: 20px; margin-top: -50px; margin-left: -450px;" (click)=openNav()>
+    &#9776;
+        </button>-->
+        <i (click)=openNav()
+           class="material-icons"
+           style="color: black; cursor: pointer;position: absolute; left: 0%; top: 5px; font-size: 50px;">dehaze</i>
+      </div>
+      <div class="item">
+        <a routerLink="/products" style="cursor: pointer;">
+          <h4 style="font-family: 'Oswald';">Alle Produkte</h4>
+        </a>
+      </div>
+      <div class="item">
+        <a (click)="searchForCategory('Laptop')" style="cursor: pointer">
+          <h4>Laptop</h4>
+        </a>
+      </div>
+      <div class="item">
+        <a (click)="searchForCategory('Mobile')" style="cursor: pointer;">
+          <h4 style="font-family: 'Oswald';">Smartphones</h4>
+        </a>
+      </div>
+      <div class="item">
+        <a (click)="searchForCategory('TV')" style="cursor: pointer;">
+          <h4 style="font-family: 'Oswald';">TV</h4>
+        </a>
+      </div>
+      <div class="item">
+        <a (click)="searchForCategory('Haushaltsmittel')" style="cursor: pointer;">
+          <h4 style="font-family: 'Oswald';">Haushaltsgegenstände</h4>
+        </a>
+      </div>
+      <div class="item">
+        <a (click)="searchForCategory('Bekleidung')" style="cursor: pointer;">
+          <h4 style="font-family: 'Oswald';">Bekleidung</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="nav-content">
+    <div (click)=closeNav() id="overlay"></div>
+    <div class="sidenav" id="mySidenav">
+      <div>
+        <div class="sidenavHeader">
+          AOMMI
+        </div>
+        <!--<button class="btn btn-primary" id="closeBtn" style="font-size: 30px; background-color: transparent; border: 0;" (click)=closeNav()>
+            X
+        </button>-->
+        <i (click)=closeNav() class="material-icons" id="closeBtn" style="font-size: 65px; color: black;">close</i>
+      </div>
+
+      <!--Below SidenavHeader-->
+      <div id="main-container">
+        <div class="sidenavContentHeader"
+             style="font-family: 'Oswald'; font-size: 30px; color: whitesmoke; text-shadow: 0 0 10px black;"><strong>Produkte</strong>
+        </div>
+        <a (click)="filter('')" style="cursor: pointer">
+          <div class="sidenavContent"
+               style="font-family: 'Oswald'; font-size: 20px; color: black; text-shadow: 0 0 10px whitesmoke;">Alle
+            Produkte
+          </div>
+        </a>
+        <hr/>
+        <div class="sidenavContentHeader"
+             style="font-family: 'Oswald'; font-size: 30px; color: whitesmoke; text-shadow: 0 0 10px black;"><strong>Elektronik</strong>
+        </div>
+        <a (click)="filter('Laptop')" style="cursor: pointer">
+          <div class="sidenavContent"
+               style="font-family: 'Oswald'; font-size: 20px; color: black; text-shadow: 0 0 10px whitesmoke;">Laptop
+          </div>
+        </a>
+        <a (click)="filter('Mobile')" style="cursor: pointer">
+          <div class="sidenavContent"
+               style="font-family: 'Oswald'; font-size: 20px; color: black; text-shadow: 0 0 10px whitesmoke;">
+            Smartphones
+          </div>
+        </a>
+        <a (click)="filter('TV')" style="cursor: pointer">
+          <div class="sidenavContent"
+               style="font-family: 'Oswald'; font-size: 20px; color: black; text-shadow: 0 0 10px whitesmoke;">TV
+          </div>
+        </a>
+        <hr/>
+        <div class="sidenavContentHeader"
+             style="font-family: 'Oswald'; font-size: 30px; color: whitesmoke; text-shadow: 0 0 10px black;"><strong>Haushalt</strong>
+        </div>
+        <a style="cursor: pointer">
+          <div class="sidenavContent"
+               style="font-family: 'Oswald'; font-size: 20px; color: black; text-shadow: 0 0 10px whitesmoke;">
+            Haushaltsgegenstände
+          </div>
+        </a>
+        <hr/>
+        <div class="sidenavContentHeader"
+             style="font-family: 'Oswald'; font-size: 30px; color: whitesmoke; text-shadow: 0 0 10px black;"><strong>Mode</strong>
+        </div>
+        <a style="cursor: pointer">
+          <div class="sidenavContent"
+               style="font-family: 'Oswald'; font-size: 20px; color: black; text-shadow: 0 0 10px whitesmoke;">
+            Bekleidung
+          </div>
+        </a>
+        <hr/>
+      </div>
+    </div>
+  </div>
+</nav>

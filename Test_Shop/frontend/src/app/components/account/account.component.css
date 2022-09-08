@@ -1,0 +1,26 @@
+.card {
+  width: 80%;
+  max-width: 80%;
+  height: 150px;
+  margin-top: 2%;
+}
+
+.main-div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.order-card {
+  width: 80%;
+  max-width: 80%;
+  height: 300px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.order-div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

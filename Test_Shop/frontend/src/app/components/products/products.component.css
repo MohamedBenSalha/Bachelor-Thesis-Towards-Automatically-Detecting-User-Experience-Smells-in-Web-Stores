@@ -1,0 +1,270 @@
+.card-top {
+  position: relative;
+  margin-top: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background: #fff;
+  background-clip: border-box;
+  background-color: rgb(91, 209, 215);
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  margin: 0px 15px;
+  text-align: center;
+}
+
+.item a:hover {
+  color: blue;
+}
+
+.card {
+  padding: 20px;
+  margin: 50px;
+  width: minmax(250px, 350px);
+}
+
+#productContainer {
+  display: contents;
+  gap: 2rem;
+  margin-inline: 0px;
+  padding: 0px;
+}
+
+#recommendationContainer {
+  margin-top: 0px;
+}
+
+/* NavBar */
+.sidenav {
+  max-width: 380px;
+  width: 85%;
+  overflow: hidden;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0;
+  background-color: lightgray;
+  transform-origin: left center;
+  transform: translateX(-380px);
+}
+
+.sidenavHeader {
+  color: white;
+  background-color: rgb(35, 47, 62);
+  padding: 10px 0px 10px 30px;
+}
+
+.sidenavContentHeader {
+  margin-top: 5px;
+  padding: 15px 0px 15px 25px;
+}
+
+.sidenavContent {
+  padding: 15px 0px 15px 25px;
+}
+
+.sidenavContent:hover {
+  background-color: #eaeded;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  color: gray;
+  background-color: gray;
+  margin: 15px auto 10px auto;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  margin-left: 380px;
+  height: 25px;
+  color: white;
+  background-color: rgb(35, 47, 62);
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 75;
+  transition: visibility 0.5s;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: black;
+}
+
+/* animation */
+@keyframes collapse {
+  0% {
+    z-index: 100;
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-380px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    z-index: 100;
+    transform: translateX(-380px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Overlay */
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.searchForProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#addButton {
+  background-color: var(--background-color);
+  color: black;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+
+  --background-color: #757575;
+  --accent-color: #ffeb3b;
+}
+
+#addButton.btn-background-circle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: var(--background-color);
+  border-radius: 50%;
+  transition: transform 500ms ease-in-out;
+
+  transform: scale(1.5);
+}
+
+#addButton.btn-background-circle:hover::before,
+#addButton.btn-background-circle:focus::before {
+  transform: scale(0);
+}
+
+#addButton.btn-background-circle {
+  z-index: 1;
+  overflow: hidden;
+  background-color: var(--accent-color);
+}
+
+
+button span {
+  display: block;
+  position: absolute;
+  background: #fbc02d;
+}
+
+button span:nth-child(1) {
+  left: 0;
+  bottom: 0px;
+  width: 3px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+button:hover span:nth-child(1) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+button span:nth-child(2) {
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+button:hover span:nth-child(2) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+button span:nth-child(3) {
+  right: 0;
+  bottom: 0px;
+  width: 3px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+button:hover span:nth-child(3) {
+  transform: scaleY(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+button span:nth-child(4) {
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+button:hover span:nth-child(4) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}

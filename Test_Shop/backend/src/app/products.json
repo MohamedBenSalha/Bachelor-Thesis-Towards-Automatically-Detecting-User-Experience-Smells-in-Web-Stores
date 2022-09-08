@@ -1,0 +1,497 @@
+[
+  {
+   
+      "_id": "61c373eb8978721683f51cca",
+    "title": "Apple iPhone 12 (Schwarz, 128 GB)",
+    "modelName": "iPhone 12",
+    "color": "Schwarz",
+    "productType": "Mobile",
+    "brand": "Apple",
+    "price": 849,
+    "serialnumber": 1234254
+  },
+  {
+   
+      "_id": "61c3742f8978721683f51ccb",
+    "title": "Apple iPhone 12 Pro Max (Silber, 128 GB)",
+    "modelName": "iPhone 12 Pro Max",
+    "color": "Silber",
+    "productType": "Mobile",
+    "brand": "Apple",
+    "price": 1217.5,
+    "serialnumber": 3452453
+  },
+  {
+   
+      "_id": "61c3744d8978721683f51ccc",
+    "title": "Samsung Galaxy S21 5G Smartphone 128GB Phantom Gray Android 11.0 G991B",
+    "modelName": "Samsung Galaxy s21 5G",
+    "color": "Phantom Gray",
+    "productType": "Mobile",
+    "brand": "Samsung",
+    "price": 705,
+    "serialnumber": 4352623
+  },
+  {
+   
+      "_id": "61c374688978721683f51ccd",
+    "title": "Samsung GALAXY S20 FE 5G cloud navy G781B Dual-SIM 128GB Android 10.0 Smartphone ",
+    "modelName": "Samsung GALAXY S20 FE 5G G781B Dual-SIM",
+    "color": "Cloud Navy",
+    "productType": "Mobile",
+    "brand": "Samsung",
+    "price": 599,
+    "serialnumber": 87957894
+  },
+  {
+   
+      "_id": "61c374918978721683f51cce",
+    "title": "Microsoft Surface Pro 8",
+    "modelName": "Surface Pro 8",
+    "color": "Gray",
+    "productType": "Laptop",
+    "brand": "Microsoft",
+    "price": 1169,
+    "serialnumber": 45754327
+  },
+  {
+   
+      "_id": "61c374a48978721683f51ccf",
+    "title": "2021 Apple MacBook Pro (14, Apple M1 Pro Chip mit 8-Core CPU und 14-Core GPU, 16 GB RAM, 512 GB SSD) - Silber",
+    "modelName": "MacBook Pro",
+    "color": "Silber",
+    "productType": "Laptop",
+    "brand": "Apple",
+    "price": 2249,
+    "serialnumber": 4734525867
+  },
+  {
+   
+      "_id": "61c374ec8978721683f51cd0",
+    "title": "2020 Apple MacBook Air mit Apple M1 Chip (13, 8 GB RAM, 256 GB SSD) - Silber",
+    "modelName": "MacBook Air",
+    "color": "Silber",
+    "productType": "Laptop",
+    "brand": "Apple",
+    "price": 1100.5,
+    "serialnumber": 45709823745
+  },
+  {
+   
+      "_id": "61c375188978721683f51cd1",
+    "title": "Lenovo ThinkPad E15 15.6 Core i7-10510U 16GB RAM 512GB SSD Win10Pro - 20RD0016GE",
+    "modelName": "ThinkPad E15 15.6 Core i7-10510U",
+    "color": "Schwarz",
+    "productType": "Laptop",
+    "brand": "Lenovo",
+    "price": 1990.55,
+    "serialnumber": 54690872347645
+  },
+  {
+   
+      "_id": "61c3752b8978721683f51cd2",
+    "title": "HP EliteBook 850 G7 i5-10210U/8GB/256SSD/FHD/matt/W10Pro",
+    "modelName": "EliteBook 850 G7",
+    "color": "Matt Silber",
+    "productType": "Laptop",
+    "brand": "HP",
+    "price": 1789.99,
+    "serialnumber": 7093855
+  },
+  {
+   
+      "_id": "61c3753a8978721683f51cd3",
+    "title": "Panasonic TX-50JXW854 Fernseher (50 Zoll TV, HDR Bright Panel Plus, 4k ultra HD Smart TV) schwarz",
+    "modelName": "Panasonic TX-50JXW854",
+    "color": "Schwarz",
+    "productType": "TV",
+    "brand": "Panasonic",
+    "price": 899,
+    "serialnumber": 7865908
+  },
+  {
+   
+      "_id": "61c3754c8978721683f51cd4",
+    "title": "LG OLED55C1 OLED Fernseher (139 cm)",
+    "modelName": "LG OLED55C1 OLED",
+    "color": "Schwarz",
+    "productType": "TV",
+    "brand": "LG",
+    "price": 1284,
+    "serialnumber": 86797354
+  },
+  {
+   
+      "_id": "61c3755d8978721683f51cd5",
+    "title": "Sony KD-75X81J BRAVIA 189cm (75 Zoll) Fernseher (Android TV, LED, 4K Ultra HD (UHD), High Dynamic Range (HDR), Google TV, Smart TV, 2021 Modell) Schwarz",
+    "modelName": "Sony KD-75X81J BRAVIA",
+    "color": "Schwarz",
+    "productType": "TV",
+    "brand": "Sony",
+    "price": 1328.9,
+    "serialnumber": 6803857
+  },
+  {
+   
+      "_id": "61c375718978721683f51cd6",
+    "title": "Philips TV Ambilight 65PUS8505/12 65-Zoll LED TV (4K UHD, P5 Perfect Picture Engine, Dolby Vision, Dolby Atmos, HDR 10+, Sprachassistent, Android TV) Hellsilber [Modelljahr 2020]",
+    "modelName": "Philips TV Ambilight 65PUS8505/12",
+    "color": "Hellsilber",
+    "productType": "TV",
+    "brand": "Philips",
+    "price": 988.95,
+    "serialnumber": 9865434
+  },
+  {
+   
+      "_id": "61c375828978721683f51cd7",
+    "title": "Samsung QLED 4K Q95T 75 Zoll (GQ75Q95TGTXZG) Quantum Prozessor 4K, Direct Full Array, Quantum HDR 2000 ",
+    "modelName": "Samsung QLED 4K Q95T",
+    "color": "Schwarz",
+    "productType": "TV",
+    "brand": "Samsung",
+    "price": 2799,
+    "serialnumber": 6633965
+  },
+  {
+   
+      "_id": "61c375908978721683f51cd8",
+    "title": "Adidas Unisex Core18 Full Zip Hoodie Hoodie",
+    "modelName": "Adidas Unisex Core18",
+    "color": "Schwarz",
+    "productType": "Bekleidung",
+    "brand": "Adidas",
+    "price": 59.99,
+    "serialnumber": 57693765
+  },
+  {
+   
+      "_id": "61c3759e8978721683f51cd9",
+    "title": "Nike Sportswear Club Fleece Hoodie Gelb",
+    "modelName": "Nike Sportswear Club",
+    "color": "Schwarz",
+    "productType": "Bekleidung",
+    "brand": "Nike",
+    "price": 52.99,
+    "serialnumber": 57648953
+  },
+  {
+   
+      "_id": "61c375c08978721683f51cda",
+    "title": "WMF Stelio Wasserkocher Edelstahl 1,7l, elektrischer Wasserkocher mit Kalkfilter, 2400 W, Wasserstandsanzeige beleuchtet, edelstahl matt",
+    "modelName": "WMF Stelio Wasserkocher",
+    "color": "Edelstahl Matt",
+    "productType": "Haushaltsmittel",
+    "brand": "WMF",
+    "price": 69.99,
+    "serialnumber": 55434567
+  },
+  {
+   
+      "_id": "61c375cd8978721683f51cdb",
+    "title": "De'Longhi Magnifica S ECAM 22.110.B, Kaffeevollautomat mit Milchaufschäumdüse, EXKLUSIV BEI AMAZON, Direktwahltasten für Espresso und Kaffee, 2-Tassen-Funktion, 1,8 Liter Wassertank, schwarz/silber",
+    "modelName": "De'Longhi Magnifica S ECAM 22.110.B",
+    "color": "Schwarz/ Silber",
+    "productType": "Haushaltsmittel",
+    "brand": "De'Longhi",
+    "price": 249,
+    "serialnumber": 4539534
+  },
+  {
+   
+      "_id": "6222814fdcd3a502e79d1131",
+    "title": "POCO M4 Pro Smartphone+Kopfhörer, 8+256GB Handy ohne Vertrag, 6.43Zoll 90Hz AMOLED DotDisplay, 64MP Triple Kamera, 5000mAh, Power Black",
+    "modelName": "POCO M4 Pro",
+    "color": "Schwarz",
+    "productType": "Mobile",
+    "brand": "Poco",
+    "price": 310,
+    "serialnumber": 6454554
+  },
+  {
+   
+      "_id": "622281e0dcd3a502e79d1135",
+    "title": "Samsung Galaxy M12 Android Smartphone ohne Vertrag, Quad-Kamera, 6,5 Zoll Infinity-V Display, starker 5.000 mAh Akku, 128 GB/4GB",
+    "modelName": "Samsung Galaxy M12",
+    "color": "Blau",
+    "productType": "Mobile",
+    "brand": "Samsung",
+    "price": 200,
+    "serialnumber": 65434234
+  },
+  {
+   
+      "_id": "62228236dcd3a502e79d1136",
+    "title": "Redmi 9A Smartphone 2GB 32GB 6.53 Zoll HD+ DotDrop Display 5000mAh (typ) 13 MP AI Rear Camera [Global Version] Gray ",
+    "modelName": "Redmi 9A",
+    "color": "Schwarz",
+    "productType": "Mobile",
+    "brand": "Xiaomi",
+    "price": 210,
+    "serialnumber": 45260853
+  },
+  {
+   
+      "_id": "62228286dcd3a502e79d1137",
+    "title": "Xiaomi Redmi 9C Smartphone 3GB 64GB 6.53 Zoll HD+ Dot Drop display 5000mAh (typ) AI Face Unlock 13 MP AI Triple Kamera Grau",
+    "modelName": "Redmi 9C",
+    "color": "Grau",
+    "productType": "Mobile",
+    "brand": "Xiaomi",
+    "price": 170,
+    "serialnumber": 9874634
+  },
+  {
+   
+      "_id": "622282dfdcd3a502e79d1138",
+    "title": "Xiaomi Redmi Note 11 Smartphone + Kopfhörer, 4+64GB ﻿Handy ohne Vertrag, 6.43” 90Hz FHD+ Amoled Dotdisplay, Snapdragon 680 Mobiltelefon, 50MP AI Quad Kamera, 5000mAh, Graphite Gray",
+    "modelName": "Redmi Note 11",
+    "color": "Graphite Gray",
+    "productType": "Mobile",
+    "brand": "Xiaomi",
+    "price": 250,
+    "serialnumber": 45769537
+  },
+  {
+   
+      "_id": "62228357dcd3a502e79d1139",
+    "title": "Motorola moto e40 Smartphone (6,5 Zoll-Display, 48-MP-Kamera, 4/64 GB, 5000-mAH, Dual-SIM, Android 11) Dunkelgrau",
+    "modelName": "Moto e40",
+    "color": "Dunkelgrau",
+    "productType": "Mobile",
+    "brand": "Motorola",
+    "price": 160,
+    "serialnumber": 8943459
+  },
+  {
+   
+      "_id": "6222839fdcd3a502e79d113a",
+    "title": "Motorola edge30 pro Smartphone (6,7 Zoll -FHD+-Display, 50-MP-Kamera, 12/256 GB, 4800 mAh, Android 12), Cosmos Blue",
+    "modelName": "edge30 pro",
+    "color": "Cosmos Blue",
+    "productType": "Mobile",
+    "brand": "Motorola",
+    "price": 850,
+    "serialnumber": 747934852
+  },
+  {
+   
+      "_id": "622283dedcd3a502e79d113b",
+    "title": "Adidas Herren Jogginghose Tiro 21 Woven",
+    "modelName": "Adidas Tiro 21 Woven",
+    "color": "Schwarz",
+    "productType": "Bekleidung",
+    "brand": "Adidas",
+    "price": 50,
+    "serialnumber": 746588739
+  },
+  {
+   
+      "_id": "62228424dcd3a502e79d113c",
+    "title": "Adidas Damen Pants 3-Streifen French Terry C",
+    "modelName": "Adidas French Terry C",
+    "color": "Schwarz",
+    "productType": "Bekleidung",
+    "brand": "Adidas",
+    "price": 68,
+    "serialnumber": 64594856
+  },
+  {
+   
+      "_id": "62228465dcd3a502e79d113d",
+    "title": "Puma Damen Jogginghose, Puma Black-Cat, M",
+    "modelName": "Puma Black-Cat",
+    "color": "Schwarz",
+    "productType": "Bekleidung",
+    "brand": "Puma",
+    "price": 45,
+    "serialnumber": 374959345
+  },
+  {
+   
+      "_id": "622284bddcd3a502e79d113e",
+    "title": "PUMA Herren Pullover",
+    "modelName": "Puma Pullover",
+    "color": "Grün",
+    "productType": "Bekleidung",
+    "brand": "Puma",
+    "price": 35,
+    "serialnumber": 87634948
+  },
+  {
+   
+      "_id": "6222850bdcd3a502e79d113f",
+    "title": "PUMA Damen ESS Logo Hoodie Hoodie",
+    "modelName": "Puma ESS Logo Hoodie",
+    "color": "Festival Fuchsia",
+    "productType": "Bekleidung",
+    "brand": "Puma",
+    "price": 55,
+    "serialnumber": 129852445
+  },
+  {
+   
+      "_id": "62228579dcd3a502e79d1140",
+    "title": "Wasserkocher Edelstahl, CRAZVIEW 2200 Watt Elektrischer Wasserkocher mit Doppelwand Design, BPA frei, 1.5Liter Teekocher Kompakt, Schwarz [Energieklasse A+++]",
+    "modelName": "CRAZVIEW Wasserkocher",
+    "color": "Schwarz",
+    "productType": "Haushaltsmittel",
+    "brand": "CRAZVIEW",
+    "price": 40,
+    "serialnumber": 553456567
+  },
+  {
+   
+      "_id": "622285c2dcd3a502e79d1141",
+    "title": "Balter Wasserkocher Edelstahl WK-06, 1,7 Liter, elektrischer Wasserkocher, 2200 Watt, Kalkfilter, Füllmengenmarkierung, LED, kabellos, Teekocher Kompakt",
+    "modelName": "Balter Wasserkocher WK-06",
+    "color": "Edelstahl",
+    "productType": "Haushaltsmittel",
+    "brand": "Balter",
+    "price": 35,
+    "serialnumber": 562534567
+  },
+  {
+   
+      "_id": "6222860edcd3a502e79d1142",
+    "title": "Philips Wasserkocher HD9350/90 Daily Collection, 1,7 l, 2200 W, Edelstahl [Energieklasse A+++]",
+    "modelName": "Philips Wasserkocher HD9350/90 Daily Collection",
+    "color": "Edelstahl",
+    "productType": "Haushaltsmittel",
+    "brand": "Philips",
+    "price": 45,
+    "serialnumber": 71239476
+  },
+  {
+   
+      "_id": "62228660dcd3a502e79d1143",
+    "title": "WMF Stelio Wasserkocher Edelstahl 1,2l, elektrischer Wasserkocher mit Kalk-Wasserfilter, 2400 W, Wasserstandsanzeige beleuchtet, edelstahl matt [Energieklasse A]",
+    "modelName": "WMF Stelio Wasserkocher",
+    "color": "Edelstahl",
+    "productType": "Haushaltsmittel",
+    "brand": "WMF",
+    "price": 40,
+    "serialnumber": 312988759
+  },
+  {
+   
+      "_id": "6222869adcd3a502e79d1144",
+    "title": "WMF Bueno Wasserkocher Edelstahl 1,7l, elektrischer Wasserkocher mit Kalkfilter, 2400 W, beleuchtete Wasserstandsanzeige, edelstahl matt",
+    "modelName": "WMF Bueno Wasserkocher",
+    "color": "Edelstahl Matt",
+    "productType": "Haushaltsmittel",
+    "brand": "WMF",
+    "price": 45,
+    "serialnumber": 67485234
+  },
+  {
+   
+      "_id": "622286e8dcd3a502e79d1145",
+    "title": "Samsung GQ85Q900RGLXZG 214 cm (85 Zoll) QLED Fernseher (8K, Smart TV) ",
+    "modelName": "Samsung GQ85Q900RGLXZG",
+    "color": "Schwarz",
+    "productType": "TV",
+    "brand": "Samsung",
+    "price": 6500,
+    "serialnumber": 7684639435
+  },
+  {
+   
+      "_id": "62228728dcd3a502e79d1146",
+    "title": "Samsung Crystal UHD TV 4K AU7199 43 Zoll (GU43AU7199UXZG), HDR, Q-Symphony, Boundless Screen [2021] [Energieklasse G]",
+    "modelName": "Samsung Crystal UHD TV 4K AU7199",
+    "color": "Schwarz",
+    "productType": "TV",
+    "brand": "Samsung",
+    "price": 450,
+    "serialnumber": 135748546
+  },
+  {
+   
+      "_id": "62228760dcd3a502e79d1147",
+    "title": "Samsung QLED 4K Q60A TV 50 Zoll (GQ50Q60AAUXZG), Quantum HDR, Quantum Prozessor Lite 4K, 100% Farbvolumen [2021] [Energieklasse G]",
+    "modelName": "Samsung QLED 4K Q60A",
+    "color": "Schwarz",
+    "productType": "TV",
+    "brand": "Samsung",
+    "price": 650,
+    "serialnumber": 24985743
+  },
+  {
+   
+      "_id": "622287b5dcd3a502e79d1148",
+    "title": "Sony KD-49XF8096 123 cm (Fernseher,400 Hz) [Energieklasse A]",
+    "modelName": "Sony KD-49XF8096",
+    "color": "Schwarz",
+    "productType": "TV",
+    "brand": "Sony",
+    "price": 800,
+    "serialnumber": 64536857
+  },
+  {
+   
+      "_id": "622287f0dcd3a502e79d1149",
+    "title": "Sony KE-55XH90/P Bravia 139 cm (55 Zoll) Fernseher (Android TV, Full Array LED, 4K, High Dynamic Range (HDR), Smart TV, Sprachsteuerung, 2021 Modell) Schwarz [Energieklasse G]",
+    "modelName": "Sony KE-55XH90/P Bravia",
+    "color": "Schwarz",
+    "productType": "TV",
+    "brand": "Sony",
+    "price": 850,
+    "serialnumber": 224945313
+  },
+  {
+   
+      "_id": "62228843dcd3a502e79d114a",
+    "title": "Lenovo V15 <> 15,6 Zoll FHD <> Core i5 10210U <> 20GB RAM <> 250GB SSD <> USB 3 <> Windows 11 Pro",
+    "modelName": "Lenovo V15",
+    "color": "Schwarz",
+    "productType": "Laptop",
+    "brand": "Lenovo",
+    "price": 800,
+    "serialnumber": 5835647645
+  },
+  {
+   
+      "_id": "62228883dcd3a502e79d114b",
+    "title": "Lenovo IdeaPad 3i Laptop 39,6 cm (15,6 Zoll, 1920x1080, Full HD, WideView, entspiegelt) Slim Notebook (Intel Celeron 6305, 4GB RAM, 128GB SSD, Intel UHD-Grafik, Win11 HomeS inkl. MS 365 Single) silber",
+    "modelName": "Lenovo IdeaPad 3i",
+    "color": "Grau",
+    "productType": "Laptop",
+    "brand": "Lenovo",
+    "price": 500,
+    "serialnumber": 54872645
+  },
+  {
+   
+      "_id": "622288f6dcd3a502e79d114c",
+    "title": "Lenovo (15,6 Zoll) HD+ Notebook (Intel N4020 2x2.80 GHz, 8GB DDR4, 512 GB SSD, Intel UHD 600, HDMI, Webcam, Bluetooth, USB 3.0, WLAN, Windows 10 Prof. 64 Bit)",
+    "modelName": "Lenovo HD+",
+    "color": "Schwarz",
+    "productType": "Laptop",
+    "brand": "Lenovo",
+    "price": 450,
+    "serialnumber": 469347645
+  },
+  {
+   
+      "_id": "6222897fdcd3a502e79d114d",
+    "title": "2020 Apple MacBook Pro mit Apple M1 Chip (13 Zoll, 8 GB RAM, 256 GB SSD) - Space Grau",
+    "modelName": "MacBook Pro",
+    "color": "Sace Grau",
+    "productType": "Laptop",
+    "brand": "Apple",
+    "price": 1600,
+    "serialnumber": 475267
+  },
+  {
+   
+      "_id": "622289d0dcd3a502e79d114e",
+    "title": "Apple MacBook Air A1466 13.3 inch | Core i5 1.6GHz | 4GB | 128GB SSD | Intel HD Graphics 6000 | macOS Big Sur | QWERTY US International",
+    "modelName": "MacBook Air",
+    "color": "Silber",
+    "productType": "Laptop",
+    "brand": "Apple",
+    "price": 800,
+    "serialnumber": 345254563
+  }
+]

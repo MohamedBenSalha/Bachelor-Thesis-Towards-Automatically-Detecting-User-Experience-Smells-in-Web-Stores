@@ -1,0 +1,40 @@
+<div class="main-div" fxFlexFill fxLayoutAlign="center center">
+  <mat-card fxFlex="25">
+    <mat-toolbar color="primary">Register Page</mat-toolbar>
+    <h1 style="color:red;">{{response_text}}</h1>
+    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" fxLayout="column" fxLayoutAlign="stretch" id="form">
+      <mat-form-field appearance="fill">
+        <input [(ngModel)]="username" id="userName" matInput name="userName" placeholder="Username" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Passwort eingeben</mat-label>
+        <input [(ngModel)]="password" [type]="hide ? 'password' : 'text'" id="password" matInput name="password"
+               required>
+        <button (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide" mat-icon-button
+                matSuffix>
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <input [(ngModel)]="email" id="email" matInput name="email" placeholder="E-Mail" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <input [(ngModel)]="firstName" id="firstName" matInput name="firstName" placeholder="Vorname" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <input [(ngModel)]="lastName" id="lastName" matInput name="lastName" placeholder="Nachname" required>
+      </mat-form-field>
+
+      <button mat-raised-button>Registrieren</button>
+
+      <!--<div [hidden]="!submitted">
+        <h4>Registrierung war erfolgreich</h4>
+      </div>-->
+    </form>
+
+  </mat-card>
+</div>

@@ -1,0 +1,163 @@
+.container {
+  text-align: center;
+  justify-content: center;
+  height: 500px;
+  width: 750px;
+}
+
+.card {
+  height: 60vh;
+  margin: 25px;
+  padding: 25px;
+}
+
+h4,
+h6 {
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 2rem;
+
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card-table {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: none;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0px solid rgba(0, 0, 0, 0.2);
+  border-radius: .25rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.center .btn {
+  font-size: 14px !important;
+  margin-top: 20px !important;
+  font-weight: 400;
+  padding: 12px 72px;
+  border-radius: 3px !important;
+}
+
+.btn {
+  /*position: absolute;
+  top: 45%;
+  left: 45%;*/
+  background-color: var(--background-color);
+  color: black;
+
+  --background-color: #757575;
+  --accent-color: #ffeb3b;
+}
+
+.btn.btn.btn-background-circle {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+.btn.btn-background-circle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: var(--background-color);
+  border-radius: 50%;
+  transition: transform 500ms ease-in-out;
+
+  transform: scale(1.5);
+}
+
+.btn.btn-background-circle:hover::before,
+.btn.btn-background-circle:focus::before {
+  transform: scale(0);
+}
+
+.btn.btn-background-circle {
+  z-index: 1;
+  overflow: hidden;
+  background-color: var(--accent-color);
+}
+
+.btn span {
+  display: block;
+  position: absolute;
+  background: #fbc02d;
+}
+
+.btn span:nth-child(1) {
+  left: 0;
+  bottom: 0px;
+  width: 3px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.btn:hover span:nth-child(1) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.btn span:nth-child(2) {
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.btn:hover span:nth-child(2) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.btn span:nth-child(3) {
+  right: 0;
+  bottom: 0px;
+  width: 3px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.btn:hover span:nth-child(3) {
+  transform: scaleY(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.btn span:nth-child(4) {
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.btn:hover span:nth-child(4) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}

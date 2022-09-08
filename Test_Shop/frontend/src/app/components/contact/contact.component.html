@@ -1,0 +1,35 @@
+<div class="main-div" fxFlexFill fxLayoutAlign="center center">
+  <mat-card fxFlex="25">
+    <mat-toolbar color="primary">Contact Page</mat-toolbar>
+    <h1 style="padding-top: 30px">{{response_text}}</h1>
+    <form #myForm="ngForm" (ngSubmit)="submitContact(myForm)" *ngIf="!error_submit" class="login-form" fxLayout="column"
+          fxLayoutAlign="stretch">
+      <mat-form-field appearance="fill">
+        <input [(ngModel)]="name" id="userName" matInput name="userName" placeholder="Username">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <label></label>
+        <input [(ngModel)]="email" id="email" matInput name="email" placeholder="E-Mail" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <input [(ngModel)]="message" id="message" matInput name="message" placeholder="Your message..."
+               style="height: 125px">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <label> {{number1}} + {{number2}} = </label>
+        <input [(ngModel)]="sum" id="check" matInput name="sum" placeholder="Sum..." type="number">
+      </mat-form-field>
+
+      <button color="primary" mat-raised-button>Senden</button>
+
+      <!--<div [hidden]="!submitted">
+        <h4>Registrierung war erfolgreich</h4>
+      </div>-->
+    </form>
+
+  </mat-card>
+</div>
+

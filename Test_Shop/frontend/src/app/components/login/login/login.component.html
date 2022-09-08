@@ -1,0 +1,37 @@
+<div class="main-div" fxFlexFill fxLayoutAlign="center center">
+  <mat-card fxFlex="25">
+    <mat-toolbar color="primary">Login Page</mat-toolbar>
+
+    <h1 *ngIf="loginFailed" style="color:red;"> {{this.response}}</h1>
+    <!--<form fxLayoutAlign="stretch" fxLayout="column" class="login-form" (ngSubmit)="onSubmit()">-->
+    <form (ngSubmit)="onSubmit()" class="login-form" fxLayout="column" fxLayoutAlign="stretch">
+      <mat-form-field appearance="fill">
+        <input [(ngModel)]="userName" id="userName" matInput name="userName" placeholder="Username" required>
+        <!--<div *ngIf="Login.submitted && username.errors" style="color: red;">
+          <div *ngIf="username.hasError('required')">
+            Username wird benötigt
+          </div>
+        </div>-->
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Passwort eingeben</mat-label>
+        <input [(ngModel)]="passwort" [type]="hide ? 'password' : 'text'" id="passwort" matInput name="passwort"
+               required>
+        <button (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide" mat-icon-button
+                matSuffix>
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+      <button mat-raised-button matomoClickAction="Login" matomoClickCategory="Click" type="submit">Login</button>
+    </form>
+    <div id="registrationDiv">
+      <a matomoClickAction="Register" matomoClickCategory="Click" routerLink="/registration" style="margin: auto;">Noch
+        kein Kunde? Dann hier registrieren!</a>
+    </div>
+    <div>
+      <a matomoClickAction="Reset Password" matomoClickCategory="Click" routerLink="/resetPasswort">Passwort
+        vergessen?</a>
+    </div>
+  </mat-card>
+</div>

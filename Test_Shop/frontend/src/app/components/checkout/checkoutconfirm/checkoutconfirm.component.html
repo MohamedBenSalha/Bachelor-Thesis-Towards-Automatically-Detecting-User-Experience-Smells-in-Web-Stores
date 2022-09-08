@@ -1,0 +1,187 @@
+<div class="page-wrapper">
+  <div class="checkout shopping">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 pr-5">
+          <div class="billing-details mt-5">
+            <h4 class="mb-4">Billing Details</h4>
+            <form class="checkout-form">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group mb-4">
+                    <label for="first_name">Name</label>
+                    <input [(ngModel)]="name" class="form-control" id="first_name" name="name" placeholder="Name"
+                           type="text">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group mb-4">
+                    <label for="last_name">Familienname</label>
+                    <input [(ngModel)]="lastName" class="form-control" id="last_name" name="lastName"
+                           placeholder="Familienname" type="text">
+                  </div>
+                </div>
+                <!--<div class="col-lg-12">
+                    <div class="form-group mb-4">
+                      <label for="company_name">Company Name(Optional)</label>
+                      <input type="text" class="form-control" id="company_name" placeholder="">
+                   </div>
+                </div>-->
+                <div class="col-lg-12">
+                  <div class="form-group mb-4">
+                    <label for="company_name">Land</label>
+                    <select [(ngModel)]="land" class="form-control" name="land">
+                      <option value="">Land aussuchen</option>
+                      <option value="Germany">Germany</option>
+                      <option value="England">England</option>
+                      <option value="USA">USA</option>
+                      <option value="Italy">Italy</option>
+                      <option value="France">France</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group mb-4">
+                    <label for="first_name">Adresse</label>
+                    <input [(ngModel)]="adresse" class="form-control" id="street" name="adresse" placeholder="Adresse"
+                           type="text">
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group mb-4">
+                    <label for="first_name">Stadt</label>
+                    <input [(ngModel)]="stadt" class="form-control" id="city" name="stadt" placeholder="Stadt"
+                           type="text">
+                  </div>
+                </div>
+                <!--<div class="col-lg-12">
+                    <div class="form-group mb-4">
+                      <label for="company_name">Bundesland </label>
+                       <select class="form-control">
+                         <option value="">Select an Option</option>
+                         <option value="January">January</option>
+                         <option value="February">February</option>
+                         <option value="March">March</option>
+                         <option value="April">April</option>
+                         <option value="May">May</option>
+                         <option value="June">June</option>
+                         <option value="July">July</option>
+                         <option value="August">August</option>
+                         <option value="September">September</option>
+                         <option value="October">October</option>
+                         <option value="November">November</option>
+                         <option value="December">December</option>
+                      </select>
+                   </div>
+                </div>-->
+
+                <div class="col-lg-12">
+                  <div class="form-group mb-4">
+                    <label for="first_name">Postleitzahl</label>
+                    <input [(ngModel)]="plz" class="form-control" id="postcode" name="plz" placeholder="Postleitzahl"
+                           type="text">
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group mb-4">
+                    <label for="first_name">Telefonnummer </label>
+                    <input [(ngModel)]="telnummer" class="form-control" id="phone" name="telnummer"
+                           placeholder="Telefonnummer" type="text">
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group mb-4">
+                    <label for="first_name">Email Adresse </label>
+                    <input [(ngModel)]="email" class="form-control" id="email" name="email" placeholder="Email Adresse"
+                           type="text">
+                  </div>
+                </div>
+                <!--<div class="col-lg-12">
+                 <div class="form-check mb-4">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Create an account?</label>
+                  </div>
+                </div>
+                 <div class="col-lg-12">
+                    <div class="form-check mb-4">
+                       <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                       <label class="form-check-label" for="exampleCheck2">Ship to a different address?</label>
+                     </div>
+                </div>-->
+                <div class="col-lg-12">
+                  <div class="form-group mb-4">
+                    <label for="first_name">Order notes (optional)</label>
+                    <textarea [(ngModel)]="orderNotes" class="form-control" cols="30" id="msg" name="orderNotes"
+                              placeholder="Notes about order e:g: want to say something" rows="5"></textarea>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- Order sidebar Summery -->
+        <div class="col-md-6 col-lg-4">
+          <div class="product-checkout-details mt-5 mt-lg-0">
+            <h4 class="mb-4 border-bottom pb-4">Order Summary</h4>
+            <ul class="summary-prices list-unstyled mb-4">
+              <li class="d-flex justify-content-between">
+                <span>Subtotal:</span>
+                <span class="h5">{{subTotal}} €</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <span>Shipping:</span>
+                <span class="h5">Free</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <span>Total</span>
+                <span class="h5">{{subTotal}} €</span>
+              </li>
+            </ul>
+            <form>
+              <!--<div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Direct bank transfer
+                </label>
+                <div class="alert alert-secondary mt-3" role="alert">
+                   Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+                 </div>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                   Check payments
+                </label>
+              </div>-->
+              <div class="form-check mb-3">
+                <input class="form-check-input" id="exampleCheck3" type="checkbox">
+                <label class="form-check-label" for="exampleCheck3">I have read and agree to the website terms and
+                  conditions *</label>
+              </div>
+            </form>
+            <div class="info mt-4 border-top pt-4 mb-5">
+              Your personal data will be used to process your order, support your experience throughout this website,
+              and for other purposes described in our <a href="#">privacy policy</a>.
+            </div>
+            <button (click)="startPayment()" class="btn btn-success">Place Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<!--<div class="modal fade" id="coupon-modal" tabindex="-1" role="dialog">
+   <div class="modal-dialog" role="document">
+      <div class="modal-content py-5">
+         <div class="modal-body">
+            <form>
+               <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Enter Coupon Code">
+               </div>
+               <button type="button" class="btn btn-main btn-small" data-dismiss="modal">Apply Coupon</button>
+            </form>
+         </div>
+      </div>
+   </div>
+</div>-->

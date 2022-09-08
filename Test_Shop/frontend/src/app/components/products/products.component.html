@@ -1,0 +1,32 @@
+<section>
+  <div id="productContainer">
+    <div class="row">
+      <!--<ng-container *ngFor="let item of products | filter:searchKey:'title'">-->
+      <ng-container *ngFor="let item of products | async">
+        <div (click)="clickEventOnProduct(item)" [routerLink]="['/product-details',  item.id]" class="card col-md-3"
+             style="width: fit-content;">
+
+          <h3 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;">
+            <strong>{{ item.title }}</strong></h3>
+          <img [src]="nums[math.floor(math.random() * nums.length)]">
+          <p
+            style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;">{{ item.modelName }}</p>
+          <p
+            style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;">{{ item.color }}</p>
+          <p
+            style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;">{{ item.productType }}</p>
+          <p
+            style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;">{{ item.brand }}</p>
+          <p><strong>Preis:</strong> {{ item.price }} €</p>
+          <button (click)=addItem(item) class="btn btn-background-circle" id="addButton">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Add to Cart
+          </button>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</section>

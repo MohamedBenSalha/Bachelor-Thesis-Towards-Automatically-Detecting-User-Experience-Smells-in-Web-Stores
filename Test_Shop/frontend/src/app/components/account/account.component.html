@@ -1,0 +1,32 @@
+<div *ngIf="user" class="main-div">
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>
+        {{user.userName}}
+      </mat-card-title>
+      <mat-card-subtitle>
+        {{user.email}}
+      </mat-card-subtitle>
+      <mat-card-content>
+        <p> Name: {{user.firstName}}</p>
+        <p> Familiename: {{user.lastName}}</p>
+      </mat-card-content>
+    </mat-card-header>
+    <button (click)="logout()" mat-raised-button>Log Out</button>
+  </mat-card>
+</div>
+<div class="order-div">
+  <mat-card class="order-card">
+    <mat-card-header>
+      <mat-card-title>
+        Bestellungen
+      </mat-card-title>
+      <mat-card-subtitle>
+        Übersicht über ihre getätigten Bestellungen
+      </mat-card-subtitle>
+      <mat-card-content>
+        <p> Sie haben noch keine Bestellung durchgeführt!</p>
+      </mat-card-content>
+    </mat-card-header>
+  </mat-card>
+</div>

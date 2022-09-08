@@ -1,0 +1,41 @@
+<div class="small-container single-product">
+  <div class="row">
+    <div id="single-product-info"> <!-- Add Matomo Track To Track Image-->
+      <img *ngIf="product?.title!.toLowerCase().includes('iphone');"
+           [src]="map.get('iphone')"
+           height="450px" width="400px">
+
+      <img *ngIf="product?.title!.toLowerCase().includes('lenovo')"
+           [src]="map.get('lenovo')"
+           height="450px" width="400px">
+
+      <img *ngIf="product?.title!.toLowerCase().includes('fernseher')"
+           [src]="map.get('fernseher')"
+           height="450px" width="400px">
+
+      <img *ngIf="product?.title!.toLowerCase().includes('macbook')"
+           [src]="map.get('macbook')"
+           height="450px" width="400px">
+      <img *ngIf="product?.title!.toLowerCase().includes('wasserkocher')"
+           [src]="map.get('wasserkocher')"
+           height="450px" width="400px">
+      <img *ngIf="!product?.title!.toLowerCase().includes('macbook')&&
+        !product?.title!.toLowerCase().includes('lenovo') && !product?.title!.toLowerCase().includes('iphone') && !product?.title!.toLowerCase().includes('fernseher') && !product?.title!.toLowerCase().includes('wasserkocher')"
+
+           [src]="map.get('default')"
+           height="450px" width="400px">
+    </div>
+
+    <div class="col-2">
+      <h1>{{product?.title}}</h1>
+      <h4>{{product?.price}} €</h4>
+      <a (click)="addItem(product)" class="btn1" href='javascript:void(0);'>Add To Cart</a>
+      <h3>Product Details <i class="fa fa-indent"></i></h3>
+      <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+        sint maiores deleniti qui asperiores impedit, ratione laborum
+        officia debitis mollitia facere rerum hic molestiae totam nihil
+        quos veniam ad modi!</p>
+    </div>
+  </div>
+</div>
