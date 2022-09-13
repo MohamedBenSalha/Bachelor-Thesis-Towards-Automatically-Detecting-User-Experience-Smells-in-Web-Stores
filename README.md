@@ -16,9 +16,9 @@ leading to the next research questions (RQ):
 
 resulting in the following results:
 
-- **RQ 1**: [Analysis of the Interviews](Interviews_Evaluation.md)
-- **RQ 2**: [UX Smells Classification](Catalog_UX_Smells.md)
-- **RQ 3**: [Process of UX Smell Detection](Process.md) & [Benchmark](Benchmark.md)
+- **RQ 1**: [Analysis of the Interviews](Organization_and_Research/Interviews_Evaluation.md)
+- **RQ 2**: [UX Smells Classification](Organization_and_Research/Catalog_UX_Smells.md)
+- **RQ 3**: [Process of UX Smell Detection](Organization_and_Research/Recognition_Process.md) & [Benchmark](Organization_and_Research/Benchmark.md)
   
 This file goes into more detail about the folders and describes what the task of each is.
 
@@ -35,7 +35,7 @@ This folder reflects the procedure adopted during this work.
   - Navigation
 - [Evaluation of Interviews](Organization_and_Research/Interviews_Evaluation.md) provides the overview and the results of the interviews conducted with Small and Medium-sized Enterprises (SMEs) in order to inquiry the most current state how SMEs deal with UX.
 - [Literature Research](Organization_and_Research/Literature_Research.md) informs about the methodology while doing the literature research and a few relevant papers.
-- [Recognition Process](Organization_and_Research/Recognition_Prozess.md) describes the process of automatically detecting the UX Smells in Web Stores.
+- [Recognition Process](Organization_and_Research/Recognition_Process.md) describes the process of automatically detecting the UX Smells in Web Stores.
 - [Study Design](Organization_and_Research/Study_Design.md) presents the research objectives, questions, results and artifacts.
 
 ## [Test Shop](Test_Shop)
